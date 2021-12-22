@@ -5,11 +5,11 @@ services:
     image: python/ubuntu:1.0
     build: .     # Dockerfileの場所
     container_name: 'container'
-    working_dir: '/work/src'
+    working_dir: '/work'
     volumes: 
       - ../work:/work
-      - ../../images:/work/classification/images
-      - ../../original:/work/classification/original
+      - ../../images:/work/dataset/data/images        # 左がローカルファイルの場所
+      - ../../original:/work/dataset/data/original
 
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
     environment: 
