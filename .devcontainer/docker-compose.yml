@@ -15,7 +15,7 @@ services:
     environment: 
       - DISPLAY=${DISPLAY}
     devices: 
-      - /dev/video0:/dev/vedeo0:mwr
+      - /dev/video0:/dev/video0:mwr
     stdin_open: true
     tty: true
     privileged: true
